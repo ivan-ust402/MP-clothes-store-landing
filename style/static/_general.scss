@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  a {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+  
+  button {
+    font-family: "Lato", sans-serif;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  input {
+    font-family: "Lato", sans-serif;
+  }
+  
+  summary {
+    display: block;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .center {
+    padding-left: calc(50% - 575px);
+    padding-right: calc(50% - 575px);
+  }
+  
+  .box-content {
+    overflow: hidden;
+  }
+
+  @media (max-width: 1024px) {
+    .center {
+      padding-left: calc(50% - 384px);
+      padding-right: calc(50% - 384px);
+    }
+  }
+  
+  
+  
+  
+  @media (max-width: 767px) {
+    .center {
+      padding-left: calc(50% - 187.5px);
+      padding-right: calc(50% - 187.5px);
+    }
+  }

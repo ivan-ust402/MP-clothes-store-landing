@@ -1,0 +1,236 @@
+.cart {
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    padding-top: 96px;
+    padding-bottom: 128px;
+  
+    &__goods {
+      display: flex;
+      flex-direction: column;
+      gap: 72px;
+      &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+  
+        &__item {
+          width: 652px;
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+          background-color: $colorBackgroundSecond;
+          transition: box-shadow .5s;
+  
+          &:hover {
+            box-shadow: 21px 24px 28px rgba(0, 0, 0, 0.2);
+          }
+  
+          &__info {
+            width: 262px;
+            box-sizing: border-box;
+            padding-left: 31px;
+            padding-top: 22px;
+            padding-bottom: 62px;
+            padding-right: 30px;
+            margin-right: 57px;
+            display: flex;
+            flex-direction: column;
+            gap: 42px;
+            .info_heading {
+              color: #222;
+              font-size: 24px;
+              font-weight: 400;
+            }
+            .info_content {
+              display: flex;
+              flex-direction: column;
+              gap: 6px;
+  
+              &__item {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                &__name {
+                  color: #575757;
+                  font-size: 22px;
+                  font-weight: 400;
+                }
+  
+                &__price {
+                  color: #EF5B70;
+                  font-size: 22px;
+                  font-weight: 400;
+                }
+  
+                &__value {
+                  color: #6F6E6E;
+                  font-size: 22px;
+                  font-weight: 400;
+                }
+  
+                &__quantity {
+                  width: 44px;
+                  box-sizing: border-box;
+                  color: #656565;
+                  font-size: 18px;
+                  font-weight: 400;
+                  border: 1px solid #EAEAEA;
+                  padding-left: 16px;
+                  padding-right: 16px;
+                  padding-top: 1px;
+                  padding-bottom: 1px;
+                  outline: none;
+                  transition: border-color .3s;
+  
+                  &:focus {
+                    border-color: #454545;
+                  }
+                }
+              }
+            }
+          }
+          &__closure {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            & path {
+              transition: all .3s;
+            }
+            &:hover path {
+              fill: $colorSelectSite;
+            }
+          }
+        }
+      }
+  
+      &__controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__button {
+          color: #000;
+          font-size: 14px;
+          font-weight: 300;
+          border: 1px solid #A4A4A4;
+          padding: 17px 41px;
+          transition: color .3s,
+                      border-color .3s;
+          &:hover {
+            border-color: $colorSelectSite;
+            color: $colorSelectSite;
+          }
+        }
+      }
+    }
+  
+    &__order {
+      display: flex;
+      flex-direction: column;
+      gap: 57px;
+      width: 360px;
+  
+      &__recepient {
+        padding-top: 17px;
+        &__heading {
+          margin-bottom: 20px;
+          color: #222;
+          font-size: 16px;
+          font-weight: 300;
+        }
+        &__form {
+          display: flex;
+          flex-direction: column;
+          gap: 21px;
+          margin-bottom: 23px;
+          .input_item {
+            outline: none;
+            box-sizing: border-box;
+            color: #B1B1B1;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 17px;
+            padding-right: 17px;
+            border: 1px solid #A4A4A4;
+            transition: border-color .3s;
+            
+            &:focus {
+              border-color: #454545;
+            }
+          }
+        }
+        .recepient__form__button {
+          border: 1px solid #A4A4A4;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-left: 15px;
+          padding-right: 15px;
+          color: #4A4A4A;
+          font-size: 11px;
+          font-weight: 300;
+          background: $colorBackgroundSecond;
+          transition: color .3s,
+                      border-color .3s;
+  
+          &:hover {
+            color: $colorSelectSite;
+            border-color: $colorSelectSite;
+          }
+        }
+      }
+      &__execute {
+        background-color: #F5F3F3;
+        padding-top: 39px;
+        padding-bottom: 42px;
+        padding-left: 44px;
+        padding-right: 44px;
+        &__total_block {
+          margin-bottom: 21px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          align-items: flex-end;
+          &__subtotal {
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+          }
+          &__total {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            .total_label {
+              color: #222;
+              font-size: 16px;
+              font-weight: 300;
+            }
+            .total_value {
+              color: #F16D7F;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+        &__fulfill {
+          border-top: 1px solid #E2E2E2;
+          padding-top: 17px;
+          .fulfill {
+            color: #fff;
+            background-color: #F16D7F;
+            border: none;
+            padding: 15px 42px;
+            width: 273px;
+            transition: background-color .3s;
+            &:hover {
+                background-color: #d73c3c;
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: $colorBackgroundFirst;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    height: 75px;
+    position: relative;
+    transition: fill 3s;
+    
+  
+    &__left {
+      display: flex;
+      gap: 41px;
+      align-items: center;
+    }
+  
+    &__rigth {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+      .burger_menu {
+        // margin-right: -21px;
+        .burger_icon {
+          cursor: pointer;
+        }
+        #burger {
+          position: absolute;
+          left: -999999px;
+          visibility: hidden;
+          &:not(:checked) ~ .nav {
+            right: -$widthBurgerMenu;
+          }
+        }
+        
+        .nav {
+          background: #FFF;
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          width: $widthBurgerMenu;
+          padding-left: 32px;
+          padding-right: 32px;
+          padding-top: 32px;
+          padding-bottom: 12px;
+          box-sizing: border-box;
+          position: absolute;
+          top: 75px;
+          right: 0;
+          z-index: 9999;
+          transition: right .3s;
+  
+  
+          .nav__list {
+            list-style: none;
+            &__title {
+              color: #000;
+              font-size: 14px;
+              font-weight: 700;
+              margin-bottom: 24px;
+            }
+            &__category {
+              .category__link {
+                color: #F16D7F;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 12px;
+              }
+  
+              &__sublist {
+                list-style: none;
+                margin-top: 12px;
+                margin-bottom: 9px;
+                padding-left: 21px;
+                padding-right: 21px;
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+                .sublist_chapter {
+                  &__link {
+                    color: #6F6E6E;
+                    font-size: 14px;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+    &__link {
+      transition: all .3s;
+    }
+    &__img:hover path {
+      fill: $colorSelectSite;
+    }
+
+
+  }
