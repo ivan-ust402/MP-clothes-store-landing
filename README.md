@@ -15,42 +15,42 @@ The purpose of developing this site was to develop advanced layout skills. This 
 
 ## Visual display of the application's operation
 <p align="center">
-  <img src="./img/project_description/index.png">
+  <img src="./img/project_description/index.png" width="500px">
 </p>
 <p align="center">
   <span style="font-weight: bold;">Picture 1.</span> Index page.
 </p>
 
 <p align="center">
-  <img src="./img/project_description/burger menu.png">
+  <img src="./img/project_description/burger menu.png" width="500px">
 </p>
 <p align="center">
   <span style="font-weight: bold;">Picture 2.</span> Burger menu.
 </p>
 
 <p align="center">
-  <img src="./img/project_description/registration.png">
+  <img src="./img/project_description/registration.png" width="500px">
 </p>
 <p align="center">
   <span style="font-weight: bold;">Picture 3.</span> Registration page.
 </p>
 
 <p align="center">
-  <img src="./img/project_description/catalog.png">
+  <img src="./img/project_description/catalog.png" width="500px">
 </p>
 <p align="center">
   <span style="font-weight: bold;">Picture 4.</span> Catalog page.
 </p>
 
 <p align="center">
-  <img src="./img/project_description/cart.png">
+  <img src="./img/project_description/cart.png" width="500px">
 </p>
 <p align="center">
   <span style="font-weight: bold;">Picture 5.</span> Cart page.
 </p>
 
 <p align="center">
-  <img src="./img/project_description/product.png">
+  <img src="./img/project_description/product.png" width="500px">
 </p>
 <p align="center">
   <span style="font-weight: bold;">Picture 6.</span> Product page.
