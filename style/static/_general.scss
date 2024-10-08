@@ -1,15 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
   
   body {
     font-family: "Lato", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
   
   a {
     font-family: "Lato", sans-serif;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
   
   a:hover {
@@ -18,6 +24,8 @@
   
   button {
     font-family: "Lato", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
 
   button:hover {
@@ -26,10 +34,13 @@
 
   input {
     font-family: "Lato", sans-serif;
+    -webkit-tap-highlight-color: transparent;
   }
   
   summary {
     display: block;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
   
   summary::-webkit-details-marker {
